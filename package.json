@@ -1,0 +1,21 @@
+{
+  "name": "generator-sls-node",
+  "version": "1.0.0",
+  "description": "Yeoman generator for Serverless node applications",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "yo",
+    "sls",
+    "serverless",
+    "lambda"
+  ],
+  "author": "Sebastian Pettersson",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^4.12.0"
+  }
+}
