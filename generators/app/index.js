@@ -24,6 +24,7 @@ class SlsNodeGenerator extends Generator {
         name: "region",
         message: "AWS Region",
         default: "eu-north-1",
+        store: true // user most likely want the same region next time
       },
     ]);
   }
