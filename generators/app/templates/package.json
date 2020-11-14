@@ -1,0 +1,10 @@
+{
+  "name": "<%= kebabCasedName %>",
+  "description": "<%= description %>",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "^2.792.0",
+    "serverless": "^2.11.1"
+  },
+  "devDependencies": {}
+}
