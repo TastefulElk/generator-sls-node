@@ -1,8 +1,7 @@
-const { handler } = require('../src/myFunction'); 
+const { handler } = require('../src/myFunction');
 
 describe('[myFunction]', () => {
-  it('should not crash', () => {
-    
-  })
-  
-})
+  it('should not crash', async () => {
+    await handler();
+  });
+});
