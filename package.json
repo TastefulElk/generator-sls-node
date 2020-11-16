@@ -1,6 +1,6 @@
 {
   "name": "generator-sls-node",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Yeoman generator for Serverless node applications",
   "scripts": {
     "test": "jest"
@@ -28,9 +28,11 @@
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
-    "semantic-release": "^17.2.2"
+    "semantic-release": "^17.2.3"
   },
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -46,5 +48,9 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "echo 'Running pre-push tests...' && yarn test"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TastefulElk/generator-sls-node.git"
   }
 }
