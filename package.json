@@ -52,5 +52,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TastefulElk/generator-sls-node.git"
+  },
+  "resolutions": {
+    "yargs-parser": ">=13.1.2 <14.0.0 || >=15.0.1 <16.0.0 || >=18.1.2",
+    "mem": ">=4.0.0"
   }
 }
