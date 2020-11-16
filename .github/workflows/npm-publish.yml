@@ -30,7 +30,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn semantic-release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   publish-gpr:
@@ -45,5 +45,5 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn semantic-release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
