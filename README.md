@@ -4,3 +4,15 @@
 # generator-sls-node
 
 A [Yeoman](https://yeoman.io/) generator for simple, extensible [Serverless Framework](https://www.serverless.com/) node applications.
+
+## Install
+
+```sh
+npm install -g yeoman generator-sls-node
+```
+
+## Run
+
+```sh
+yo sls-node
+```
