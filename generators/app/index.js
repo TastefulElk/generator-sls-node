@@ -1,5 +1,6 @@
 const Generator = require('yeoman-generator');
 const { kebabCase } = require('./utility');
+const { regions } = require('./regions');
 
 class SlsNodeGenerator extends Generator {
   async prompting() {
@@ -16,9 +17,10 @@ class SlsNodeGenerator extends Generator {
         message: 'Description',
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'region',
         message: 'AWS Region',
+        choices: regions,
         default: 'eu-north-1',
         store: true, // user most likely want the same region next time
       },
