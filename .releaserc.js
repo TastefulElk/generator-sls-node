@@ -7,6 +7,7 @@ module.exports = {
       '@semantic-release/github',
       '@semantic-release/npm',
       '@semantic-release/release-notes-generator',
+      '@semantic-release/git'
     ],
   },
 };
