@@ -27,10 +27,20 @@ class SlsNodeGenerator extends Generator {
   }
 
   writing() {
-    this.fs.copyTpl(this.templatePath(), this.destinationPath(), {
-      ...this.answers,
-      kebabCasedName: kebabCase(this.answers.name),
-    });
+    this.fs.copyTpl(
+      this.templatePath(),
+      this.destinationPath(),
+      {
+        ...this.answers,
+        kebabCasedName: kebabCase(this.answers.name),
+      },
+      undefined,
+      {
+        globOptions: {
+          dot: true,
+        },
+      },
+    );
   }
 
   install() {
