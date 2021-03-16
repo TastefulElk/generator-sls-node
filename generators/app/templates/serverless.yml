@@ -1,9 +1,19 @@
 service: <%= kebabCasedName %>
 
+plugins:
+  - serverless-webpack
+
+package:
+  individually: true
+
+custom:
+  webpack:
+    packager: yarn
+
 provider:
   name: aws
   region: <%= region %>
-  runtime: nodejs12.x
+  runtime: nodejs14.x
 
 functions:
   myFunction:

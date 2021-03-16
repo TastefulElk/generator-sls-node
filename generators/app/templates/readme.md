@@ -3,11 +3,11 @@
 ## Install
 
 ```sh
-npm install
+yarn install
 ```
 
 ## Deploy
 
 ```sh
-npx sls deploy
+yarn sls deploy
 ```

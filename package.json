@@ -3,7 +3,6 @@
   "version": "0.0.0-development",
   "description": "Yeoman generator for Serverless node applications",
   "scripts": {
-    "test": "jest"
   },
   "keywords": [
     "yeoman-generator",
@@ -21,6 +20,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/git": "^9.0.0",
+    "@types/jest": "^26.0.20",
     "commitizen": "^4.2.2",
     "commitlint": "^11.0.0",
     "cz-conventional-changelog": "3.3.0",
@@ -46,8 +46,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "echo 'Running pre-push tests...' && yarn test"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "repository": {
