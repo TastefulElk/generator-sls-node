@@ -15,6 +15,5 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
-  },
-  ignore: ['webpack.config.js']
+  }
 };

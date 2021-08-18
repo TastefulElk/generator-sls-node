@@ -1,14 +1,10 @@
 service: <%= kebabCasedName %>
 
 plugins:
-  - serverless-webpack
+  - serverless-esbuild
 
 package:
   individually: true
-
-custom:
-  webpack:
-    packager: yarn
 
 provider:
   name: aws

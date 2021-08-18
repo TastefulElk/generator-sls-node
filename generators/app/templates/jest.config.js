@@ -1,4 +1,6 @@
 module.exports = {
-  preset: 'ts-jest',
+  transform: {
+    "^.+\\.(j|t)sx?$": "esbuild-jest"
+  },
   testEnvironment: 'node',
 };
