@@ -9,7 +9,7 @@ A [Yeoman](https://yeoman.io/) generator for simple, extensible [Serverless Fram
 ## Install
 
 ```sh
-npm install -g yeoman generator-sls-node
+npm install -g yo generator-sls-node
 ```
 
 ## Run
